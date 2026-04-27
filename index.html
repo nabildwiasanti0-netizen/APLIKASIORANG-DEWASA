@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENICIOUS - Pembelajaran Dewasa</title>
+    <style>
+        /* CSS Internal untuk Desain Responsif dan Sederhana */
+        :root {
+            --soft-blue: #7ba4cf; /* Warna biru soft untuk elemen utama */
+            --soft-red: #e68a8a;  /* Warna merah soft untuk aksen */
+            --text-color: #333333;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--soft-blue);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: var(--soft-red);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #d17575; /* Merah soft yang sedikit lebih gelap saat di-hover */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            scroll-margin-top: 60px;
+        }
+
+        h2 {
+            color: var(--soft-blue);
+            border-bottom: 2px solid var(--soft-red);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #4a6b8c;
+        }
+
+        .alert-box {
+            background-color: #eef3f8;
+            border-left: 5px solid var(--soft-blue);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .case-study {
+            background-color: #fff9f9;
+            border-left: 5px solid var(--soft-red);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsivitas untuk layar kecil */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                border-bottom: 1px solid #d17575;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GENICIOUS</h1>
+        <p>Platform Belajar Mandiri untuk Pengembangan Diri & Profesional</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#studi-kasus">Studi Kasus</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Selamat Datang di GENICIOUS</h2>
+            <p>Aplikasi ini dirancang khusus untuk Anda yang ingin terus berkembang di tengah kesibukan. Kami memahami bahwa sebagai orang dewasa, Anda membutuhkan materi yang <strong>praktis, langsung pada intinya, dan relevan dengan kehidupan nyata</strong>. Pilih materi yang Anda butuhkan dan pelajari dengan kecepatan Anda sendiri.</p>
+        </section>
+
+        <section id="materi">
+            <h2>Materi: Literasi Digital & Keamanan Data Diri</h2>
+            <p>Di era modern, data diri sama berharganya dengan dompet Anda. Materi ini akan membantu Anda mengamankan jejak digital Anda tanpa istilah teknis yang membingungkan.</p>
+            
+            <h3>1. Mengenali Phishing (Penipuan Online)</h3>
+            <p>Phishing adalah teknik penipuan di mana pelaku menyamar sebagai pihak tepercaya (seperti bank atau platform e-commerce) melalui email atau pesan WhatsApp untuk mencuri data pribadi Anda (password, PIN, OTP).</p>
+            <ul>
+                <li><strong>Ciri-ciri:</strong> Tata bahasa buruk, meminta tindakan mendesak ("Akun Anda akan diblokir!"), dan memberikan tautan (link) yang mencurigakan.</li>
+                <li><strong>Tindakan:</strong> Jangan pernah mengklik tautan dari nomor tidak dikenal. Periksa langsung melalui aplikasi resmi.</li>
+            </ul>
+
+            <h3>2. Mengelola Kata Sandi (Password) yang Aman</h3>
+            <p>Hindari menggunakan tanggal lahir atau nama anak sebagai kata sandi. Gunakan kombinasi huruf besar, kecil, angka, dan simbol.</p>
+
+            <div class="alert-box">
+                <strong>Butuh Bantuan?</strong><br>
+                Jika ada yang ingin ditanyakan terkait materi ini atau Anda memiliki kendala teknis, Anda bisa menghubungi alamat email: <strong>abilaqueen6@gmail.com</strong>
+            </div>
+        </section>
+
+        <section id="studi-kasus">
+            <h2>Studi Kasus & Penerapan Nyata</h2>
+            <p>Mari kita lihat bagaimana materi di atas diterapkan dalam skenario kehidupan sehari-hari.</p>
+            
+            <div class="case-study">
+                <h3>Kasus: Pesan WhatsApp dari "Kurir Paket"</h3>
+                <p><strong>Situasi:</strong> Bapak Budi menerima pesan WhatsApp dari nomor tak dikenal yang mengaku sebagai kurir ekspedisi. Pesan tersebut melampirkan sebuah file berekstensi <em>.APK</em> dengan nama "Foto_Resi_Paket.apk" dan meminta Budi untuk membukanya.</p>
+                <p><strong>Penerapan Andragogi (Analisis):</strong> Berdasarkan pengalaman Budi berbelanja online, ia tahu bahwa resi biasanya berbentuk teks atau foto (.JPG), bukan aplikasi (.APK). Mengingat materi literasi digital, Budi menyadari ini adalah modus pencurian data (Sniffing) yang bisa menguras saldo rekening (M-Banking) miliknya jika aplikasi tersebut diinstal.</p>
+                <p><strong>Solusi:</strong> Budi mengabaikan pesan tersebut, memblokir nomor pengirim, dan melaporkannya sebagai spam.</p>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Kami sangat menghargai masukan dan pertanyaan Anda. Untuk konsultasi lebih lanjut mengenai materi pengembangan diri, Anda dapat menghubungi kami melalui:</p>
+            <ul>
+                <li><strong>Email Bantuan Pembelajaran:</strong> abilaqueen6@gmail.com</li>
+                <li><strong>Jam Layanan:</strong> Senin - Jumat (09:00 - 17:00 WIB)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>GENICIOUS</strong> - Memberdayakan Pembelajar Dewasa</p>
+        <p>Instagram: <a href="https://instagram.com/rumahberkembang" style="color: #e68a8a; text-decoration: none;">@rumahberkembang</a></p>
+        <p>Website: <a href="#" style="color: #e68a8a; text-decoration: none;">www.rumahberkembang.com</a></p>
+    </footer>
+
+</body>
+</html>
